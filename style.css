@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: "Alice", serif;
   font-weight: 400;
   font-style: normal;
   color: #573A37;
-  line-height: 150%;
 }
 
 body {
@@ -24,17 +28,34 @@ body {
   border-radius: 16px;
 }
 
-#page h1 {
+#page main {
+  padding: 24px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+#about p + p {
+  margin-top: 12px;
+}
+
+#ingredients ul {
+  padding-left: 24px;
+}
+
+h1 {
   font-size: 40px;
   line-height: 140%;
 }
 
-#page h2 {
+h2 {
   font-size: 24px;
+  line-height: 150%;
 }
 
-#page h1, 
-#page h2 {
+h1, h2 {
+  margin-bottom: 4px;
   font-weight: 400;
   color: #291B1A;
 }
